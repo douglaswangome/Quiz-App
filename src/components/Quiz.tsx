@@ -75,11 +75,11 @@ const Quiz:React.FC<Questions> = ({ questions }) => {
         </div>
       </div>
       <div className="p-1">
-        <div className="text-3xl font-light">
+        <div className="text-3xl max-[520px]:text-xl font-light">
           <span>Q.{currentQuestion.number}:</span>
           <span className="ml-1">{currentQuestion.question}</span>
         </div>
-        <div className="font-light text-2xl p-2">
+        <div className="font-light text-2xl max-[520px]:text-lg p-2">
           <div className="flex items-center">
             <input
               className="mr-1" 
@@ -101,7 +101,7 @@ const Quiz:React.FC<Questions> = ({ questions }) => {
             <label htmlFor="false">False</label>
           </div>
         </div>
-        <div className="w-fit ml-auto">
+        <div className="ml-auto w-fit">
           <button 
             className={`border border-red-400 font-light text-xl text-red-400 rounded-2xl px-3 py-1 hover:bg-red-400 hover:text-white transition-all duration-300`}
             onClick={() => nextQuestion(choice)}
