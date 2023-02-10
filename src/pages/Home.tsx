@@ -42,7 +42,7 @@ const Home: React.FC = () => {
     content = (
       <>
       <div className="border border-red-400 shadow-xl p-6 w-fit mt-6 mx-auto text-2xl max-[520px]:text-xl max-[520px]:text-md font-extralight rounded-xl">
-        <div className="w-fit mx-auto">
+        <div className="mx-auto w-fit">
           <span className="text-red-400 text-4xl max-[520px]:text-2xl font-extralight">Quiz App</span>
         </div>
         <div className="flex flex-col my-2">
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
   return (
     <div className="max-[520px]:p-2">
       {content}
-      <div className="w-fit h-fit m-auto mt-6">
+      <div className="m-auto mt-6 w-fit h-fit">
         <button 
           className={`w-full border border-red-400 font-light text-xl max-[520px]:text-md mr-5 text-red-400 rounded-2xl px-3 py-1 hover:bg-red-400 hover:text-white transition-all duration-300 ${showQuestions ? "opacity" : "opacity-0"}`}
           onClick={() => setShowQuestions(false)}  

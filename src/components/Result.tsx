@@ -19,7 +19,7 @@ const Result: React.FC<Props> = (props) => {
     content = (
       <>
         <span className={`text-red-400 text-4xl max-[520px]:text-2xl font-extralight my-1`}>Congratulations! You finished the quiz!!</span>
-        <div className="text-2xl my-1">
+        <div className="my-1 text-2xl">
           <span>Your final score is:</span>
           <span className={`text-red-400 ml-1`}>{score}</span>
           <span>/{number}</span>
@@ -36,7 +36,10 @@ const Result: React.FC<Props> = (props) => {
     content = (
       <>
         <span className={`text-red-400 text-4xl max-[520px]:text-2xl font-extralight`}>{title}</span>
-        <span className="text-xl">Question: {question}</span>
+        <span 
+          className="text-xl"
+          dangerouslySetInnerHTML={{__html: `Question: ${question}`}}
+        ></span>
         <span className="text-xl">Answer: {answer.slice(0, 1).toUpperCase()}{answer.slice(1)}</span>
         <div className="text-2xl">
           <span>Your score is:</span>

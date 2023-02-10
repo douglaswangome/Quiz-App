@@ -75,9 +75,12 @@ const Quiz:React.FC<Questions> = ({ questions }) => {
         </div>
       </div>
       <div className="p-1">
-        <div className="text-3xl max-[520px]:text-xl font-light">
+        <div className="text-3xl max-[520px]:text-xl font-light break-words">
           <span>Q.{currentQuestion.number}:</span>
-          <span className="ml-1">{currentQuestion.question}</span>
+          <span 
+            className="ml-1"
+            dangerouslySetInnerHTML={{__html: currentQuestion.question}}
+          ></span>
         </div>
         <div className="font-light text-2xl max-[520px]:text-lg p-2">
           <div className="flex items-center">
