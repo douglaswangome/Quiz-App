@@ -51,7 +51,7 @@ const Result: React.FC<Props> = (props) => {
   }  
 
   return (
-    <div className={`flex flex-col text-center justify-center items-center absolute top-0 bg-red-200 h-full w-full font-light ${showCorrectHero ? "left-0" : "-ml-10 -left-full"} rounded-xl transition-all duration-300`}>
+    <div className={`flex flex-col text-center justify-center items-center absolute top-0 bg-red-200 h-full w-full font-light ${showCorrectHero ? "left-0" : "-ml-10 -left-full"} rounded-xl transition-all duration-300 break-words`}>
       {content}
     </div>
   );
